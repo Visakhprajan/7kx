@@ -1,0 +1,43 @@
+venopenalgo
+openalgo.db
+.flaskenv
+*.pyc
+__pycache__/
+instance/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.python-version
+config.ini
+
+
+#DB Files and Log/Tmp Files
+
+*.egg-info/
+*.db
+*.sqlite
+*.log
+*.tmp
+
+
+# Environments  
+.venv 
+env/ 
+venv/ 
+ENV/ 
+env.bak/ 
+venv.bak/ 
+
+# Node modules
+/node_modules/
+
+# Build output
+/dist/
+/build/
+/.next/
+/out/
+
+# Tailwind CSS output
+# **/output.css
+
