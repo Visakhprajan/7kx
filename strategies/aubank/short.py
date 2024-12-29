@@ -9,7 +9,7 @@ api_key = '42c3510f21af4329d48d0e9d6491bf09bdefbf8008ee9516776d78f7b3474e7f'
 
 # Strategy parameters
 strategy = "EMA & CPR Python"
-symbol = "AUBANK"  # OpenAlgo Symbol
+symbol = "BHEL"  # OpenAlgo Symbol
 exchange = "NSE"
 product = "MIS"
 quantity = 1  # Single lot
@@ -87,7 +87,7 @@ def ema_strategy():
                 entry_price = ltp
 
             # Target Condition
-            if position > 0 and ltp >= entry_price * (1 - target_pct):
+            elif position > 0 and ltp <= entry_price * (1 - target_pct):
                 response = client.placesmartorder(
                     strategy=strategy,
                     symbol=symbol,
@@ -104,7 +104,7 @@ def ema_strategy():
                 entry_price = None  # Reset entry price
 
             # Stop-Loss Condition
-            if position > 0 and ltp <= entry_price * (1 + stop_loss_pct):
+            elif position > 0 and ltp >= entry_price * (1 + stop_loss_pct):
                 response = client.placesmartorder(
                     strategy=strategy,
                     symbol=symbol,
