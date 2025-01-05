@@ -10,7 +10,7 @@ api_key = '42c3510f21af4329d48d0e9d6491bf09bdefbf8008ee9516776d78f7b3474e7f'
 
 # Set the strategy details and trading parameters
 strategy = "MACD + EMA Strategy"
-symbols = ["ARVIND", "HFCL", "PFC", "HINDALCO", "NCC", "NTPC"]  # List of symbols
+symbols = ["ARVIND", "HFCL", "PFC", "HINDALCO", "NCC", "NTPC", "ADANIENT", "ADANIPORTS", "APOLLOHOSP", "ASIANPAINT", "AXISBANK", "BAJAJ-AUTO", "BAJFINANCE", "BAJAJFINSV", "BPCL", "BHARTIARTL", "BRITANNIA", "CIPLA", "COALINDIA", "HDFCLIFE", "HINDALCO", "ITC", "TATASTEEL", "UPL", "WIPRO"]  # List of symbols
 exchange = "NSE"
 product = "MIS"
 quantity = 1
